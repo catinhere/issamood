@@ -1,7 +1,7 @@
 const router = require('express').Router();
-let User = require('../models/User');
+let User = require('../models/User.js');
 const jwt = require('jsonwebtoken');
-const bcrypt = require('../index.js').bcrypt
+const bcrypt = require('./index.js').bcrypt
 
 router.route('/:id').get((req, res) => {
     var id = req.params.id;

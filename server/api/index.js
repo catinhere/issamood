@@ -8,7 +8,7 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 module.exports.bcrypt = bcrypt;
 
-let User = require('./models/User');
+let User = require('../models/User');
 
 require('dotenv').config();
 
@@ -31,6 +31,7 @@ app.use(cors({
 app.use(express.json());
 
 const uri = process.env.ATLAS_URI;
+console.log(process.env);
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true, useFindAndModify: false });
 const connection = mongoose.connection;
 // connection.once('open', () => {
@@ -100,14 +101,14 @@ app.get('/logout', (req, res) => {
 });
 
 /* Routes */
-const usersRouter = require('./routes/users');
-const userRouter = require('./routes/user');
-const postsRouter = require('./routes/posts');
-const postRouter = require('./routes/post');
-const commentRouter = require('./routes/comment');
-const commentsRouter = require('./routes/comments');
-const boardsRouter = require('./routes/boards');
-const boardRouter = require('./routes/board');
+const usersRouter = require('./users');
+const userRouter = require('./user');
+const postsRouter = require('./posts');
+const postRouter = require('./post');
+const commentRouter = require('./comment');
+const commentsRouter = require('./comments');
+const boardsRouter = require('./boards');
+const boardRouter = require('./board');
 
 app.use('/users', usersRouter);
 app.use('/user', userRouter);
@@ -121,3 +122,5 @@ app.use('/board', boardRouter);
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });
+
+module.exports = app;
