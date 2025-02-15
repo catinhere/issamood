@@ -22,7 +22,7 @@ import Error from './components/Error';
 import axios from 'axios';
 import { USER_ID } from './utils';
 import * as serviceWorker from './serviceWorker';
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics"
 
 const NoMatchPage = () => {
     return (
