@@ -1,0 +1,140 @@
+#container {
+  background-image: url('../assets/backgrounds/background.png');
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 103% -50px;
+  background-origin: border-box;
+}
+
+#home-section {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 150px;
+}
+
+#title {
+  font-weight: bold;
+  font-size: 80px;
+}
+
+#subtitle {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#home-links {
+  margin-top: 40px;
+}
+
+.link {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline;
+  position: relative;
+  z-index: 1;
+}
+
+.pink {
+  background-image: linear-gradient(rgba(255,255,255,0) 55%, #D997C6 55%);
+}
+
+.green {
+  background-image: linear-gradient(rgba(255,255,255,0) 55%, #C4CA85 55%);
+}
+
+.orange {
+  background-image: linear-gradient(rgba(255,255,255,0) 55%, #F29662 55%);
+}
+
+.btn-lg {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 10px;
+  border: none;
+  padding: 10px;
+}
+
+.pink-btn {
+  background-color: #D997C6;
+}
+
+.green-btn {
+  background-color: #C4CA85;
+}
+
+#mockup-img {
+  width: 50vw;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 40vw;
+}
+
+@media (max-width: 1355px) {
+  #mockup-img {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1355px) {
+  #container {
+    background-image: url('../assets/backgrounds/background-mobile.png');
+    background-position: 103% -500px;
+  }
+
+  #content {
+    margin-top: 350px;
+    margin-left: 200px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #container {
+    background-image: url('../assets/backgrounds/background-mobile.png');
+    background-position: 103% -400px;
+  }
+}
+
+@media (max-width: 767px) {
+  #container {
+    background-image: url('../assets/backgrounds/background-mobile.png');
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 103% -25px;
+    background-origin: border-box;
+  }
+
+  #home-section {
+    margin-left: 40px;
+  }
+
+  #content {
+    margin-top: 50%;
+    margin-left: 50px;
+  }
+
+  #title {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  #subtitle {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  #home-links {
+    margin-top: 30px;
+  }
+
+  .link {
+    font-size: 20px;
+  }
+}

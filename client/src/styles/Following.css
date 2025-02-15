@@ -1,0 +1,32 @@
+.following-heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.following-link {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#following-container {
+    margin-right: 50px;
+}
+
+#following-feed-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+    #following-container {
+        display: none;
+    }
+
+    #following-feed-container {
+        justify-content: center;
+        width: 90vw;
+    }
+}

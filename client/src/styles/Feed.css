@@ -1,0 +1,226 @@
+#moods {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mood-icon {
+    text-align: center;
+    padding: 15px;
+    width: 110px;
+    height: 110px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.mood-pic {
+    width:70px;
+    height: 70px;
+}
+
+.mood-label {
+    margin-top: 10px;
+}
+
+.mood {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    color: white;
+}
+
+.feed-section {
+    width: 95vw;
+    margin-top: 30px;
+}
+
+.feed-heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+#feed-content {
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icons-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.post-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px;
+    text-align: center;
+}
+
+.post-icon-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+.post-icon-title {
+    font-size: 10px;
+    font-weight: 700;
+    width: 100px;
+}
+
+.post-icon-likes {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+.inline-heading-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.sublink {
+    font-size: 10px;
+}
+
+@media (max-width: 1024px) {
+    .icons-section {
+        justify-content: flex-start;
+    }
+}
+
+
+@media (max-width: 340px) {
+    .mood-icon {
+        text-align: center;
+        padding: 15px;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    
+    .mood-pic {
+        width:40px;
+        height: 40px;
+    }
+
+    .mood-label {
+        margin-top: 0px;
+    }
+
+    .mood {
+        font-size: 10px;
+    }
+
+}
+
+@media (min-width: 341px) and (max-width: 375px) {
+    .mood-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .mood-pic {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mood-label {
+        margin-top: 0px;
+    }
+
+    .mood {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 500px) {
+    .mood-icon {
+        width: 75px;
+        height: 75px;
+    }
+    
+    .mood-pic {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mood-label {
+        margin-top: 0px;
+    }
+
+    .mood {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+    .mood-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mood-pic {
+        width: 30px;
+        height: 30px;
+    }
+
+    .mood-label {
+        margin-top: 0px;
+    }
+
+    .mood {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 767px) {
+    #feed-content {
+        margin-left: 10px;
+    }
+
+    .feed-section {
+        width: 90vw;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+    .mood-icon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .mood-pic {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mood-label {
+        margin-top: 0px;
+    }
+
+    .mood {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #feed-content {
+        margin-left: 0px;
+    }
+}

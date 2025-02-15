@@ -1,0 +1,31 @@
+#comments {
+    width: 100%;
+}
+
+.comment-container {
+    margin: 5px auto;
+    padding: 10px;
+    display: flex;
+}
+
+.comment-user-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.comment-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-user-name {
+    font-weight: 700;
+    font-size: 13px;
+    color: #D997C6;
+}
+
+.comment {
+    font-size: 13px;
+}
