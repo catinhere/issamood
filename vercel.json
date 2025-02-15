@@ -1,11 +1,11 @@
 {
     "version": 2,
-    "builds": [
-      {
-        "src": "server/index.js",
-        "use": "@vercel/node"
-      }
-    ],
+    "functions": {
+        "server/index.js": {
+            "runtime": "nodejs12.x",
+            "memory": 1024
+        }
+    },
     "routes": [
       {
         "src": "/(.*)",
