@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "builds": [
+      {
+        "src": "server/index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "server/index.js"
+      }
+    ],
+    "outputDirectory": "client/build",
+    "buildCommand": "npm install --prefix server && npm install --prefix client && npm run build --prefix client"
+  }
