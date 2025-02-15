@@ -4,7 +4,7 @@ import LoadingGif from '../assets/loader.gif'
 function Loading() {
     return (
         <div style={{textAlign: 'center', marginTop: "30vh"}}>
-            <img src={LoadingGif}></img>
+            <img src={LoadingGif} alt="loading"></img>
         </div>
     );
 }
