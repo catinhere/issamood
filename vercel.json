@@ -13,5 +13,5 @@
       }
     ],
     "outputDirectory": "client/build",
-    "buildCommand": "npm install --prefix server && npm install --prefix client && npm run build --prefix client"
+    "buildCommand": "cd server && npm install && cd .. && cd client && npm install && npm run build"
   }
