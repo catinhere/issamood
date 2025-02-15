@@ -34,9 +34,9 @@ const uri = process.env.ATLAS_URI;
 console.log(process.env);
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true, useFindAndModify: false });
 const connection = mongoose.connection;
-// connection.once('open', () => {
-//     console.log("MongoDB connection established successfully.");
-// });
+connection.once('open', () => {
+    console.log("MongoDB connection established successfully.");
+});
 
 /* Setup Passport */
 app.use(flash())
