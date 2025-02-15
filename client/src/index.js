@@ -22,6 +22,7 @@ import Error from './components/Error';
 import axios from 'axios';
 import { USER_ID } from './utils';
 import * as serviceWorker from './serviceWorker';
+import { Analytics } from "@vercel/analytics/react"
 
 const NoMatchPage = () => {
     return (
@@ -71,7 +72,7 @@ class NavBarWindowContainer extends Component {
                     <Route exact path="/posts" component={Posts} />
                     <Route component={NoMatchPage} />
                 </Switch>
-                
+                <Analytics/>
             </div>
         )
     }
