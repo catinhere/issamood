@@ -16,13 +16,13 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "http://localhost:3000");
+    res.header("Access-Control-Allow-Origin", process.env.FE_URI);
     res.header("Access-Control-Allow-Credentials",true);
     next();
   });
 
 app.use(cors({
-    origin: ['http://localhost:3000'],
+    origin: [process.env.FE_URI],
     methods:['GET','POST', 'PUT', 'DELETE'],
     credentials: true, // enable set cookie,
     allowedHeaders: 'Origin, X-Requested-With, Content-Type, Accept'
